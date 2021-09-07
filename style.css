@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.items {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#canvas {
+   margin-bottom: 100px;
+   margin-top: 25px;
+   display: flex;
+   justify-content: center;
+   width: 600px;
+}
+
+.information {
+   width: 600px;
+   height: 500px;
+}
+
+.grass {
+   margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.grassEater, .predator, .lava, .arrow {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.grass .square {
+   background-color: #1E8449;
+}
+
+.grassEater .square {
+   background-color: #F1C40F;
+}
+
+.predator .square {
+   background-color: #B03A2E;
+}
+
+.lava .square {
+   background-color: #BA4A00;
+}
+
+.arrow .square {
+   background-color: #2874A6;
+}
+
+.square {
+   width: 50px;
+   height: 50px;
+}
+
+.info {
+   width: 500px;
+   margin-left: 30px;
+}
