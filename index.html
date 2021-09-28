@@ -5,48 +5,108 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1200px-Circle-icons-computer.svg.png">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1200px-Circle-icons-computer.svg.png">
     <link rel="stylesheet" href="style.css">
     <title>TUMO - Programming 3</title>
 </head>
 
 <body>
+    <header class="header__container container">
+        <div class="title">
+            <h1 class="title">Programming 3</h1>
+            <p class="subtitle">final work</p>
+        </div>
+        <div class="navbar">
+            <ul class="navbar__item">
+                <li class="navbar__items"><a href="">Stats</a></li>
+                <li class="navbar__items"><a href="">New</a> </li>
+                <li class="navbar__items"><a href=""></a> </li>
+                <li class="navbar__items"><a href=""></a> </li>
+            </ul>
+        </div>
+    </header>
+    
     <div class="items">
-        <div class="information">
-            <h1 class="title">Programming 3 final work</h1>
-            <div class="grass">
-                <div class="square"></div>
-                <div class="info">Grass - Կանաչը խոտն է, որը բազմանում է N ցիկլը մեկ, մահանում է երբ նրան ուտում են
+        <div class="container">
+            <div id="canvas"></div>
+            <div class="information">
+                <div class="grass">
+                    <div class="square"></div>
+                    <div class="info">Grass - Կանաչը խոտն է, որը բազմանում է N ցիկլը մեկ, մահանում է երբ նրան ուտում են
+                    </div>
+                </div>
+
+                <div class="grassEater">
+                    <div class="square"></div>
+                    <div class="info">GrassEater - Դեղինը խոտակերն է, որը բազմանում է N հատ խոտ ուտելուց հետո և մահանում
+                        է N
+                        հատ չուտելուց հետո, կամ երբ նրան ուտում են</div>
+                </div>
+
+                <div class="predator">
+                    <div class="square"></div>
+                    <div class="info">Predator - Կարմիրը գիշատիչն է, որը բազմանում է N հատ խոտ կամ խոտակեր ուտելուց հետո
+                        և
+                        մահանում է N հատ չուտելուց հետո, կամ երբ նրան ուտում են</div>
+                </div>
+
+                <div class="lava">
+                    <div class="square"></div>
+                    <div class="info">Lava - Նարնջագույնը լավան է, ուտում է իր կողքի 8 վանդակներում եղածներին և մահանում
+                        է
+                        նրա կենտրոնըիր կողքի լավաներին դաձնելով պատ</div>
+                </div>
+
+                <div class="arrow">
+                    <div class="square"></div>
+                    <div class="info">Hunter - Կապույտը որսորդն է, սպանում է գիշատիչին իրենից 1 կամ 2 վանդակ
+                        հեռավորության
+                        նաև կարող է մահանալ N հատ գիշատիչ չուտելուց հետո, կամ լավայից</div>
                 </div>
             </div>
-
-            <div class="grassEater">
-                <div class="square"></div>
-                <div class="info">GrassEater - Դեղինը խոտակերն է, որը բազմանում է N հատ խոտ ուտելուց հետո և մահանում է N
-                    հատ չուտելուց հետո, կամ երբ նրան ուտում են</div>
-            </div>
-
-            <div class="predator">
-                <div class="square"></div>
-                <div class="info">Predator - Կարմիրը գիշատիչն է, որը բազմանում է N հատ խոտ կամ խոտակեր ուտելուց հետո և
-                    մահանում է N հատ չուտելուց հետո, կամ երբ նրան ուտում են</div>
-            </div>
-
-            <div class="lava">
-                <div class="square"></div>
-                <div class="info">Lava - Նարնջագույնը լավան է, ուտում է իր կողքի 8 վանդակներում եղածներին և մահանում է
-                    նրա կենտրոնըիր կողքի լավաներին դաձնելով պատ</div>
-            </div>
-
-            <div class="arrow">
-                <div class="square"></div>
-                <div class="info">Hunter - Կապույտը որսորդն է, սպանում է գիշատիչին իրենից 1 կամ 2 վանդակ հեռավորության
-                    նաև կարող է մահանալ N հատ գիշատիչ չուտելուց հետո, կամ լավայից</div>
-            </div>
         </div>
-        <div id="canvas"></div>
     </div>
 
+    <div class="stats container">
+        <div>
+            <div class="stats__title">
+                Stats
+            </div>
+            <p class="stats__subtitle subtitle">
+                Hear is about statistics
+            </p>
+        </div>
+        <div class="stats__content">
+            <div class="grass stats__item">
+                <div class="stats__square"></div>
+                <div class="count">Count</div>
+                <div class="num">555</div>
+            </div>
+            <div class="grassEater stats__item">
+                <div class="stats__square"></div>
+                <div class="count">Count</div>
+                <div class="num">555</div>
+            </div>
+            <div class="predator stats__item">
+                <div class="stats__square"></div>
+                <div class="count">Count</div>
+                <div class="num">555</div>
+            </div>
+
+            <div class="lava stats__item">
+                <div class="stats__square"></div>
+                <div class="count">Count</div>
+                <div class="num">555</div>
+            </div>
+
+            <div class="arrow stats__item">
+                <div class="stats__square"></div>
+                <div class="count">Count</div>
+                <div class="num">555</div>
+            </div>
+        </div>    
+    </div>
 
     <!-- scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
